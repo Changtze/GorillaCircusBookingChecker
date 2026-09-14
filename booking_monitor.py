@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 
 # Configuration
 URL = "https://booking.bookinghound.cloud/fe/booking?og=bdffd003-ab61-4b27-8513-d0e8ef0f1425&mode=sl"
-NTFY_TOPIC = "trapeze" # CHANGE THIS to a unique, random string
+NTFY_TOPIC = "gorilla_trapeze" # CHANGE THIS to a unique, random string
 CHECK_INTERVAL_SECONDS = 300 # Checks every 5 minutes
 
 def send_push_notification(message):
