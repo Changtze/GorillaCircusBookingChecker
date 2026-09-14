@@ -73,13 +73,11 @@ def check_availability():
 
 if __name__ == "__main__":
     print("Starting booking monitor...")
-    while True:
-        success = check_availability()
-        
-        if success:
-            # Stop checking once we find availability so we don't spam your phone
-            print("Exiting script. Go book your class!")
-            break
-            
-        print(f"Waiting {CHECK_INTERVAL_SECONDS / 60} minutes before next check...\n")
-        time.sleep(CHECK_INTERVAL_SECONDS)
+    if __name__ == "__main__":
+    print("Starting single check for GitHub Actions...")
+    success = check_availability()
+    
+    if success:
+        print("Availability found! Exiting script.")
+    else:
+        print("Check complete. No places yet. Exiting script.")
