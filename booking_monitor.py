@@ -72,8 +72,6 @@ def check_availability():
         driver.quit()
 
 if __name__ == "__main__":
-    print("Starting booking monitor...")
-    if __name__ == "__main__":
     print("Starting single check for GitHub Actions...")
     success = check_availability()
     
