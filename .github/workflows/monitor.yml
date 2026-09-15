@@ -3,7 +3,7 @@ name: Booking Monitor
 on:
   schedule:
     # Runs every 10 minutes. You can adjust this as needed.
-    - cron: '*/30 * * * *'
+    - cron: '*/20 * * * *'
   # Allows you to manually trigger it from the GitHub Actions tab anytime
   workflow_dispatch:
 
